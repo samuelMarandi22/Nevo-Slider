@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slider</title>
+    <link rel="stylesheet" href="./themes/default/default.css" media="screen" />
+    <link rel="stylesheet" href="./themes/light/light.css" media="screen" />
+    <link rel="stylesheet" href="./themes/dark/dark.css" media="screen" />
+    <link rel="stylesheet" href="./themes/bar/bar.css" media="screen" />
+
+    <link rel="stylesheet" href="./css/nivo-slider.css" media="screen" />
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="wrapper">
+      <div class="slider-wrapper theme-bar">
+        <div id="slider" class="nivoSlider">
+          <img src="./images/toystory.jpg" />
+          <img src="./images/up.jpg" />
+          <img src="./images/walle.jpg" />
+          <img src="./images/nemo.jpg" />
+        </div>
+      </div>
+    </div>
+    <script src="./scripts/jquery-1.9.0.min.js"></script>
+    <script src="./scripts/jquery.nivo.slider.js"></script>
+    <script>
+      $(window).load(function () {
+        $("#slider").nivoSlider();
+      });
+    </script>
+  </body>
+</html>
